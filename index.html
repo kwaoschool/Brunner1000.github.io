@@ -4,131 +4,166 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>portfolio</title>
+    <title>Home - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/-Filterable-Cards-.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
     <link rel="stylesheet" href="assets/css/Article-List.css">
-    <link rel="stylesheet" href="assets/css/card-image-zoom-on-hover.css">
-    <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
-    <link rel="stylesheet" href="assets/css/Header-Blue.css">
-    <link rel="stylesheet" href="assets/css/Header-Dark.css">
-    <link rel="stylesheet" href="assets/css/Image-Hover-Effect.css">
-    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
-    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
-    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Team-with-rotating-cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
 
 <body>
-    <section class="py-5">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="#">Brand</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="hire-me.html">Hire me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro">
+            <div class="container">
+                <div class="avatar" style="background-image: url(&quot;assets/img/smallerImage.jpg&quot;);"></div>
+                <div class="about-me">
+                    <p>Hello! I am <strong>Brunner Arthur</strong>.&nbsp; I have a passion for building computer programs to solve problems in my community.&nbsp; I am familiar with java, javafx, javascript, html, css, php, python, sql, android programming,
+                        artificial intelligence, computer hardware</p><a class="btn btn-outline-primary" role="button" href="#">Hire me</a></div>
+            </div>
+        </section>
+        <section class="portfolio-block photography">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="assets/img/nature/image2.jpg"></a></div>
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"></a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="article-list">
         <div class="container">
-            <h1 class="text-center mb-4">ARTHUR&nbsp; BRUNNER</h1>
-            <div class="filtr-controls text-center lead text-uppercase mb-3"><span class="active d-inline-block mx-3 py-1 position-relative" data-filter="all">HEDTELLARTICLESS@GMAIL.COM</span><span class="d-inline-block mx-3 py-1 position-relative" data-filter="1">@bETPIDO</span><span class="d-inline-block mx-3 py-1 position-relative"
-                    data-filter="1">java, javafx, html, css, php, python,&nbsp; sql, javascript, hardware, artificial intelligence, android app programming</span><span class="d-inline-block mx-3 py-1 position-relative" data-filter="1"></span><span class="d-inline-block mx-3 py-1 position-relative"
-                    data-filter="2"></span></div>
-            <div class="row filtr-container">
-                <div class="col-md-6 col-lg-4 filtr-item" data-category="2,3">
-                    <div class="card border-dark">
-                        <div class="card-header bg-dark text-light"></div><img class="img-fluid card-img-bottom w-100 d-block rounded-0" src="assets/img/smallerImage.jpg"></div>
+            <div class="intro">
+                <h2 class="text-center">My projects</h2>
+                <p class="text-center">These include personal and marketed projects. Most of my projects&nbsp; are located on github. Github links of source codes are provided below&nbsp;<br></p>
+            </div>
+            <section class="portfolio-block projects-cards">
+                <div class="container">
+                    <div class="heading">
+                        <h2>Recent Work</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/Screenshot%20(2149).png" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="projects-grid-cards.html" target="_blank"><br><strong>School Management Software&nbsp;</strong><br><br></a></h6>
+                                    <p class="text-muted card-text">It stores personal information of students,&nbsp; records of school fees, and grading of students during exams</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/Screenshot%20(2079).png" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="#"><br><strong>pharmacy app</strong><br><br></a></h6>
+                                    <p class="text-muted card-text"><br>You would enter your symptoms and the app would recommend a first aid to you.&nbsp;<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/Screenshot%20(1997).png" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="#"><br><strong>a dictionary</strong><br><br></a></h6>
+                                    <p class="text-muted card-text">This is a desktop dictionary. I have a dictionary on my phone, but sometimes I needed to use a dictionary and my phone was not around&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/Screenshot%20(1992).png" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="#"><br><strong>A Customer Relationship Management System</strong><br><br></a></h6>
+                                    <p class="text-muted card-text">It contains tables that keep track of yourc customers and your business goals<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/Screenshot_1673847245.png" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="#"><br><strong>call a taxi</strong><br>app<br></a></h6>
+                                    <p class="text-muted card-text"><br>&nbsp;I built an app to enable people to call taxi drivers in the city.<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/IMG-20230103-WA0002.jpg" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="#">School website</a></h6>
+                                    <p class="text-muted card-text">A website for a school that was started less than a year ago.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/multipaste.png" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="#"><br><strong>a floating clipboard</strong><br><br></a></h6>
+                                    <p class="text-muted card-text"><br>a simple tool to receive copied variable names and code snippets during programming<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/Screenshot%20(1996).png" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="#"><br><strong>random word generator</strong><br><br></a></h6>
+                                    <p class="text-muted card-text"><br>During programming, I used this small tool I made to generate variable names.&nbsp;<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/Screenshot%20(1999).png" alt="Card Image"></a>
+                                <div class="card-body">
+                                    <h6><a href="#"><br><strong>language translator</strong><br><br></a></h6>
+                                    <p class="text-muted card-text"><br>&nbsp;It translates from French, Ger man, Italian, Portuge and Spanish to Twi and English; and vice versa<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="portfolio-block website gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-5 offset-lg-1 text">
+                    <h3>Most recent Project</h3>
+                    <p>I volunteerd to build a simple website for a school in region. The school is just a year old and needed the website to ask for NGO support. link: kwaoschool.github.io</p>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div class="portfolio-laptop-mockup">
+                        <div class="screen">
+                            <div class="screen-content" style="background-image:url(&quot;assets/img/tech/image6.png&quot;);"></div>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div></div>
-    <div class="article-list">
+    <footer class="page-footer">
         <div class="container">
-            <div class="intro">
-                <h2 class="text-center">my projects</h2>
-                <p class="text-center">These include personal and marketed projects. Most of my projects&nbsp; are located on github. Github links of source codes are provided below&nbsp;</p>
-            </div>
-            <div class="row articles">
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/school.png"></a>
-                    <h3 class="name">School Management Software</h3>
-                    <p class="description">A software built fo rstoring personal information of students. During exams, its used to grade students and print reports. Finally, it stores school fees history of students. I came up with the idea to make this software after working
-                        in a private school for a year&nbsp;</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/chargewhat.png"></a>
-                    <h3 class="name">how much should you charge your customers</h3>
-                    <p class="description">A simple online service I made to help new businesses to select the right price for their product. I asked these business owners about what they were selling and to whom. Then I researched about the products and customers. Finally,
-                        I emailed the business owners the best price I thought would help them and why.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/connect2.png"></a>
-                    <h3 class="name">Make friends online</h3>
-                    <p class="description">During Covid-19 period, most developers were at home. I thought it would be great if we could make friends with like-minded people online. So I built a website for that. The product worked by people introducing themselves on the page.
-                        If 2 or more people liked each other's profile, they would then contact themselves directly.&nbsp;</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/htmlrice.png"></a>
-                    <h3 class="name">Convert your website data into graphs</h3>
-                    <p class="description">I built this analytics plaatform so that you convert your website visitors' data into graphs and charts</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/emal.png"></a>
-                    <h3 class="name">Auto reply to your emails</h3>
-                    <p class="description">Out of the numerous emails you receive daily, how many do you get time to read and reply to? I made this Minimum Viable Product (MVP) to find out whether many people wanted a solution to this problem</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div
-                    class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/tavel.png"></a>
-                    <h3 class="name">A leisure and hospitality project</h3>
-                    <p class="description">In 2020, a group of final year IT students in a local university, were working on a Travel And Tour project. The aim of their project was to build one platform for visitors to identify site-seing areas in around them. This platform
-                        shows visitors all the available hotels, tourist attractions, museums etc available and the directions to the place. I built this project for them.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-            <div
-                class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/multipaste.png"></a>
-                <h3 class="name">a floating clipboard</h3>
-                <p class="description">I built this floating clipboard because, you need a simple tool to receive copied variable names and code snippets during programming. Also, a computer's default clipboard does not float and cannot contain more than one item at a time.
-                    My clopboard was a desktop application and it solved that problem. I showed to fellow developers on the internet for feedback</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-        <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot%20(1990).png"></a>
-            <h3 class="name">business nanny</h3>
-            <p class="description">A nanny takes care of your kids for you so you can focus on your profession. Likewise I tried to build a small agency that runs online businesses for people if they don't have time to do so themselves</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-        <div
-            class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot%20(1991).png"></a>
-            <h3 class="name">how to order the right cloth size online</h3>
-            <p class="description">There was a lot of complaint on ecommerce websites about people ordering the wrong size of clothes and having to ship them back to the manufacturers. I built an online tool to help people to choose the right size of clothes to order. It worked
-                by taking the height and weight of the person and recommending a size. The recommended size was based on the reviews of the people who have already bought the same item before and what sizes fit them.&nbsp;</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-    <div
-        class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot%20(1992).png"></a>
-        <h3 class="name">A Customer Relationship Management System</h3>
-        <p class="description">It took me about 2 weeks to built this Customer Relationship Management System (CRM). I used html, css, javascript, php and Mysql to program this online application.&nbsp; This CRM has 3 pages.&nbsp; A page to store information about your potential
-            customers, a page for you already acquired customers , and a page for your business plans</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-        <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot%20(1993).png"></a>
-            <h3 class="name">product review</h3>
-            <p class="description">This was a pet project I made in 2015.&nbsp; It was a small engine that displayed reviews of products. It worked by entering the name of an item you are interested in, then online reviews of the item would pop up.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-        <div
-            class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot%20(1995).png"></a>
-            <h3 class="name">rent items from your neighbourhood</h3>
-            <p class="description">For the things you need for only a short time, why don't you rent them from your neighbours or someone in your town?. Do you need a laptop to use for a week, a bicycle to buy some foodstuffs from the market or a grass cutting machine to stop
-                the excess growth of your garden grass? Why do need to buy them when you can rent them from your neighbours or people in your town/city and return it when you don't need it anymore?<br><br><br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-            <div
-                class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot%20(1996).png"></a>
-                <h3 class="name">random word generator</h3>
-                <p class="description">During programming, I used this small tool I made to generate variable names. I coded this tool in java and it reqires you to list all the consonants and vowels in a finite array, then you randomly mix them up. The result of this operation
-                    becomes the random word generated.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot%20(1997).png"></a>
-                    <h3 class="name">a desktop dictionary</h3>
-                    <p class="description">I made a dictionary for desktop computers. I got the words and meanings from open source word-meaning texts online, then I built a graphical user interface(GUI) around the words. So when a user searches for a word using my GUI, my
-                        dictionary searches through the text, retrieves the exact words and return the meaning to the user on my GUI. I programmed it in java and javafx8</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                <div
-                    class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot%20(1999).png"></a>
-                    <h3 class="name">language translator</h3>
-                    <p class="description">I built a translator application using java. It translated from French, Ger man, Italian, Portuge and Spanish to Twi and English; and vice versa. Of course, I can't speak most of these languages, so I took the translations from online
-                        (open source) and built a user interface around it</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                    <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/pexels-photo-208518.jpeg"></a>
-                        <h3 class="name">pharmacy app</h3>
-                        <p class="description">During Third year in university, my project mates and I built a pharmacy app for students on campus. You would enter your symptoms and the app would recommend a first aid to you. It would also display the address and phone numbers
-                            of the the pharmacies near you.</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                    <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Screenshot_1673847245.png"></a>
-                        <h3 class="name">call a taxi</h3>
-                        <p class="description">While living in Sunyani, I built an app to enable people to call taxi drivers in the city. The app worked fine but it failed to become popular. The reason being that, most of the taxi drivers in the city did not use the internet
-                            while driving and preferred keeping customers' numbers on their phone rather than on my app</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                    <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/Y8Nnf2l821.png"></a>
-                        <h3 class="name">a simple maths game</h3>
-                        <p class="description">I built a simple math game to pass idle times.&nbsp;&nbsp;</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                    <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/7LeSUtzkRQ.png"></a>
-                        <h3 class="name">Exercise reminder</h3>
-                        <p class="description">I tried to exercise 10 mins daily. Later realised that its not possible without a reminder. So I built an app on my phone to remind me to exercise at cer tain times in the day</p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-                    </div>
-                    </div>
-                    </div>
-                    <script src="assets/js/jquery.min.js"></script>
-                    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-                    <script src="assets/js/-Filterable-Cards-.js"></script>
+            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
+            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
