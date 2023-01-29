@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>portfolionew</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Pharmacy app</h1><img class="img-fluid" src="assets/img/Screenshot%20(2151).png"></div>
+                    <div class="text">
+                        <p>The PHARMACY APP is a project my group mates and I made in 3rd year in university(2018). I was responsible for building the software application of our project</p>
+                        <p>PHARMACY APP was to serve as first aid for students if medical support was not available at the time. For example, if a student was unwell at 2am and is unable to go out at this time of the night, the PHARMACY APP is his emergency
+                            help. This application contains information about diseases, their symptoms and their solutions.&nbsp; It also contains information about over-the-counter-medicines, the sicknesses they solve and the pharmacies near you that
+                            you can buy them from. The application also gives you the phone numbers of these pharmacies so you can contact them from your hostel room</p>
+                        <h2>Tools I used</h2>
+                        <p>I built this application with JAVA, JAVAFX and CSS. I designed the front-end using javafx. This application is an offline software and is expected to run on a desktop computer. That was the constraint of our project. My IDE was
+                            ECLIPSE.</p>
+                        <h2>Features of the PHARMACY APP</h2>
+                        <p>The PHARMACY APP has 2 main windows, 1) a window for viewing common over-the-counter-drugs. From this window, you can read more on each drug's use and how to get it. 2) a window for viewing common diseases. You can select a disease,
+                            read on its symptoms and how you can treat it or where to find a drug for it. From the picture below, the first interface of the application contains 2 buttons. Each button takes you to one of the 2 windows.</p>
+                        <figure><img class="figure-img" src="assets/img/Screenshot%20(2151).png">
+                            <figcaption>first interface of the PHARMACY APP</figcaption>
+                        </figure>
+                    </div>
+                    <div class="text">
+                        <h2>sample source code of home interface</h2>
+                        <p>I comment the code blocks so the source code is self explanatory. On line 52 of the source code, you can see that the interface was built using javafx. The class 'Desktop_main_gui' extends the javafx 'Application' class so that
+                            we can implement its default 'start' method. From line 66, I created an instance of 'Borderpane' class, referenced by 'showAppNameOnly'. This borderpane holds all the nodes(items) that you see on the home interface.</p>
+                        <figure><img class="figure-img" src="assets/img/SG3qzGW5y0.png"><img class="figure-img" src="assets/img/firstButton.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">over the counter drugs - section</h1><img class="img-fluid" src="assets/img/firstSection.jpg"></div>
+                    <div class="text">
+                        <p>clicking on the 'over the counter drugs' of the first interface takes you this window. You can see common drugs on campus. Choosing each drug will display more information about that drug. The search bar at the top is for searching
+                            a particular drug by entering its name.</p>
+                        <h2>sample source code of the 'over the counter section'</h2>
+                        <p>The background image is a drug, I downloaded this image from pexels.com. The image was placed behind the list of drugs. From the java code below, you can see that the font color and size of the drug names are the same. I used the
+                            'Text' node for them so I could design using CSS if need be.</p>
+                        <figure><img class="figure-img" src="assets/img/firstSection.jpg"><img class="figure-img" src="assets/img/drugNames.png"></figure>
+                        <p>Choosing a drug takes you to a new window that contains the details of the drug. For example, ACETAMINOPHEN is chosen below, and from source code (line 50), ImageView is used to hold the picture of the drug. The image is set to
+                            300px by 300px. It will auto size depending on the computer screen size. The information about the drug is placed in a vertical box (VBOX) as seen on line 63</p>
+                        <figure><img class="figure-img" src="assets/img/dySkT0zZbi.png"><img class="figure-img" src="assets/img/acetaminophen.png"></figure>
+                        <p>The information about the drugs and their usage was taken from verified sources online. The tool bar at the top of the application contains the 'home, help, update,about' buttons. The home button takes you back to the home page
+                            of the software. I did not implement the use of 'help, update,about' buttons because of the time we had to allocate to the project<br></p>
+                        <figure><img class="figure-img" src="assets/img/drugDetail.png"><img class="figure-img" src="assets/img/drugDetailCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">my aid - section</h1><img class="img-fluid" src="assets/img/aidSection.png"></div>
+                    <div class="text">
+                        <p>This window displays the list of common diseases you can be affected by. By clicking on a disease from the left side of the window, its details are displayed on the right side of the window</p>
+                        <h2>sample source code of the 'over the counter section'</h2>
+                        <p>&nbsp;From the source code, 2 vertical Boxes (VBOX) hold the contents of the 'first-aid' window. The left VBox(line 721) holds the list of disease and right VBox holds the contents of the selected disease. These 2 VBoxes are placed
+                            in a BorderPane(line 724). The top of the borderPane also holds the toolBar. When a disease is selected, the 'setOnAction' method is called and a click event is registered (line 730)</p>
+                        <figure><img class="figure-img" src="assets/img/aidSection.png"><img class="figure-img" src="assets/img/aidSectionCode.png"></figure>
+                        <p>From the source code image below, you can see that each disease contains these&nbsp; parts: name, symptoms, treatment and referenced by private node variables</p>
+                        <figure><img class="figure-img" src="assets/img/head1%20(1).png"><img class="figure-img" src="assets/img/head1%20(2).png"><img class="figure-img" src="assets/img/headacheCode.png"></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
