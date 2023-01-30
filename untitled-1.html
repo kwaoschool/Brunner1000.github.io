@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>portfolionew</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Article-Clean.css">
     <link rel="stylesheet" href="assets/css/Article-List.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
@@ -20,60 +19,55 @@
             <div class="row">
                 <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
                     <div class="intro">
-                        <h1 class="text-center">School Management Software<br></h1><img class="img-fluid" src="assets/img/homepage.png"></div>
+                        <h1 class="text-center">School Management Software<br></h1><img class="img-fluid" src="assets/img/homepage.png">
+                    </div>
                     <div class="text">
                         <h2><strong>Features of this software</strong><br></h2>
-                        <p>My School Management System performs 3 functions. 1) It stores students' personal information. 2) During exams, it grades students and prints terminal reports 3) It stores records of fee payment of students and class bills.&nbsp;<br>I
-                            built this application in 2021. Schools that use this application wanted it in different flavors.&nbsp; For example, the image above is a design for a school whose accountant is also the proprietor. This way, there needs to
-                            be only a password for the Accounting - section. But for a school inwhich the proprietor and accountant are sepparate persons, I implemented passwords for Academics - section and Accounting - section.<br><br></p>
+                        <p>My School Management System performs 3 functions. 1) It stores students' personal information. 2) During exams, it grades students and prints terminal reports 3) It stores records of fee payment of students and class bills.&nbsp;<br>I built this application in 2021. Schools that use this application wanted it in different flavors.&nbsp; For example, the image above is a design for a school whose accountant was also the proprietor. This way, there needed to be only a password for the Accounting - section. However, most other schools that use this software system have the proprietor and accountant are separate persons, so I implemented passwords for Academics - section and Accounting - section.</p>
                         <figure><img class="figure-img" src="assets/img/homepage.png"><img class="figure-img" src="assets/img/homepage2.png">
-                            <figcaption>first interface of the PHARMACY APP</figcaption>
+                            <figcaption>optional interfaces of the SCHOOL MANAGEMENT SOFTWARE</figcaption>
                         </figure>
                         <h2><strong>Tools I used</strong><br></h2>
-                        <p>I programmed the backend in JAVA. Then I designed Graphical User Interface (GUI) using JAVAFX. I initially programmed everything in intellij Idea community edition, but I later switched to Netbeans IDE. This was because it was
-                            easier to import external jar files into Netbeans and I needed those jar files to print terminal report of students.&nbsp;<br>The most demanding part of the Academics - section was making sure the system was right with grade
-                            calculations. With the Accounting - section, accurate calculation of financial data was the most time consuming part, as there needed to be no bug in such places<br></p>
+                        <p>I programmed the backend in core JAVA. Then I designed frontend using JAVAFX. I initially programmed everything in Intellij Idea Community Edition, but I later switched to Netbeans IDE. This was because it was easier to import external Jasper-report jar files into Netbeans and I needed those jar files to print terminal report of students.&nbsp;<br>The most demanding part of the Academics - section was making sure the system was right with grade calculations. With the Accounting - section, accurate calculation of financial data was the most time consuming part, as there needed to be no bugs there.</p>
                     </div>
                     <div class="text">
                         <h2>sample source code of home interface</h2>
-                        <p>I comment the code blocks so the source code is self explanatory. On line 52 of the source code, you can see that the interface was built using javafx. The class 'Desktop_main_gui' extends the javafx 'Application' class so that
-                            we can implement its default 'start' method. From line 66, I created an instance of 'Borderpane' class, referenced by 'showAppNameOnly'. This borderpane holds all the nodes(items) that you see on the home interface.</p>
+                        <p>Main is the class that displays the application on the user's computer. This class extends the JAVAFX's Application class. Line 20 below shows the use of 'style.css' file to design the buttons and text on the first window of the software.</p>
+                        <p>In the next image, class PasswordForMain contains the nodes that recieve passwords from the user. Without the user entering the passwords, he can't log into the system. PasswordForMain is a Horizontal Box (HBox) so items are placed from top to bottom.</p>
                         <figure><img class="figure-img" src="assets/img/homepageCode.png"><img class="figure-img" src="assets/img/homepage2Code.png"></figure>
                     </div>
                 </div>
                 <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
                     <div class="intro">
-                        <h1 class="text-center"><strong>ACADEMICS - SECTION</strong><br></h1><img class="img-fluid" src="assets/img/academicCode.png"></div>
+                        <h1 class="text-center"><strong>ACADEMICS - SECTION</strong><br></h1><img class="img-fluid" src="assets/img/academicCode.png">
+                    </div>
                     <div class="text">
-                        <p>each button on the screen enables you to access a specific page to perform&nbsp; a specific academic work. Here I will talk about the 'add students', and 'examination'.<br></p>
-                        <p>I designed the ACADEMIC SECTION to contain buttons with images. This enhances the User Experience (UX). From the code below, each button contains an image and a text. Then its added to a gridPane. The gridPane is used in javafx
-                            to hold items in a particular order.&nbsp;</p>
+                        <p>Each button on the screen enables you to access a specific page to perform&nbsp; a specific academic work. Here I will talk about the 'add students', and 'examination' windows.</p>
+                        <p>I designed the ACADEMIC SECTION to contain buttons with images. This enhances the User Experience (UX). From the code below, each button contains an image and a text. Then its added to a gridPane. The gridPane is used in javafx to hold items in a particular order.&nbsp;</p>
                         <figure><img class="figure-img" src="assets/img/academicCode1.png"><img class="figure-img" src="assets/img/academicCode2.png"></figure>
                     </div>
                     <div class="text">
                         <h2>ADD STUDENTS&nbsp;</h2>
-                        <p>ADD STUDENTS button displays the interface where a new student can be admitted into the school.&nbsp; The page is partitioned. The left side is for admitting a single student. The right side is for admitting multiple students at
-                            the same time, by importing an excel sheet containing student data<br></p>
-                        <p>Line 40 of the source code image below begins the addition of a new student. Method newAdmissionGui() is called to display the fields to enter a new student's details. Finally, when 'save student' button is clicked,&nbsp; method
-                            studentIDOperation() on line 70 of the next image is called in the background. This method gives the new student his id, class, subjects and empty terminal report</p>
+                        <p>ADD STUDENTS button displays the window where a new student can be admitted into the school. This window is partitioned. The left side is for admitting a single student. The right side is for admitting multiple students at the same time, by importing an excel sheet containing student data.</p>
+                        <p>Line 40 of the source code image below begins the addition of a new student. Method newAdmissionGui() is called to display the fields to enter a new student's details. Finally, when 'save student' button is clicked,&nbsp; method studentIDOperation() on line 70 of the next image is called in the background. This method gives the new student his id, class, subjects and empty terminal report.</p>
                         <figure><img class="figure-img" src="assets/img/addStudent.png"><img class="figure-img" src="assets/img/addStudentGUI.png"><img class="figure-img" src="assets/img/addStudentMethodGUI.png"></figure>
                     </div>
                     <div class="text">
                         <h2>EXAMINATION</h2>
-                        <p>All things exam, are performed here.&nbsp; Marks of students are intered or imported here, the system auto does the calculation, giving each student his respective class position, printing terminal report of students, and exporting
-                            the MASTER SHEET&nbsp; of the exam.<br></p>
+                        <p>All things exam, are performed here. Marks of students are interred or imported here, the system auto does the calculation, giving each student his respective class position, printing terminal report of students, and exporting the MASTER SHEET of the exam.</p>
                         <figure><img class="figure-img" src="assets/img/examm.png"><img class="figure-img" src="assets/img/examGui.png"></figure>
                     </div>
                 </div>
                 <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
                     <div class="intro">
-                        <h1 class="text-center"><strong>ACCOUNTING - SECTION</strong><br></h1><img class="img-fluid" src="assets/img/account.png"></div>
+                        <h1 class="text-center"><strong>ACCOUNTING - SECTION</strong><br></h1><img class="img-fluid" src="assets/img/account.png">
+                    </div>
                     <div class="text">
-                        <p>School fees history, revenue and expenditure of the school, students' bill, and all money related activities are taken care of here. I will show the 'pay fees', and 'revenue/expenditure' windows<br></p>
+                        <p>School fees history, revenue and expenditure of the school, students' bill, and all money related activities are taken care of here. I will show the 'pay fees', and 'revenue/expenditure' windows.</p>
                     </div>
                     <div class="text">
                         <h2>PAY FEES</h2>
-                        <p>This is where school fees of students is paid. This page also stores the bills all the receipts of each student since they were admitted to the school<br></p>
+                        <p>This is where school fees of a student is paid. This window also stores the bills and all the receipts of each student since they were admitted to the school.</p>
                         <p></p>
                         <figure><img class="figure-img" src="assets/img/payF.png"><img class="figure-img" src="assets/img/payF2.png"><img class="figure-img" src="assets/img/Fgui.png"></figure>
                     </div>

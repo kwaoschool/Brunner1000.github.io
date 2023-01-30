@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>portfolionew</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Desktop dictionary</h1><img class="img-fluid" src="assets/img/homepage-1.png">
+                    </div>
+                    <div class="text">
+                        <p>DESKTOP DICTIONARY is a dictionary I made while in university studying computer science.</p>
+                        <p>I took the words and their meanings from the open source Webster's Unabridged Dictionary. From the picture above, you can see that I have referenced the source of the words at the bottom.&nbsp;</p>
+                        <p>I built the dictionary using JAVA and JAVAFX. I initially built the first version, but it I did not include concurrency and this made it slow. This version, I included multithreading. This made the dictionary very fast and took advantage of the cores in a multicore computer. I also used CSS extensively and worked with java 8's New Input Output (NIO) method. When the dictionary is started, it loads the words and their meanings from a text file into an arrayList. This list is used throughout the use of the dictionary. When a user makes changes to the user interface of the dictionary, this is saved to disc.</p>
+                        <h2>Features of the Desktop Dictionary</h2>
+                        <p>It performs the function of a dictionary, but not all dictionaries contain antonyms and synonyms. This dictionary contains all that. However it does not contain all the common words used today. From the toolbar in the image below, you can see that I included features such as 'History' button, for viewing search history. Also 'Favorites' button, for viewing your favorite searched words, 'font size' button for making the texts bigger or smaller, etc. The dictionary allows you to search for an exact word, a word that starts/ends with a particular letter or phrase, etc. The 'starred' button is used to save a word to your the favorites's list.</p>
+                        <figure><img class="figure-img" src="assets/img/searchItem.png"><img class="figure-img" src="assets/img/search.png">
+                            <figcaption>first interface of the DESKTOP DICTIONARY</figcaption>
+                        </figure>
+                    </div>
+                    <div class="text">
+                        <h2>sample source code of home interface</h2>
+                        <p>The IDE I developed with was Intellij Idea Community Edition. The comments of the source are in green and yellow. I commented the code so its self explanatory.</p>
+                        <figure><img class="figure-img" src="assets/img/homepageCode-1.png"><img class="figure-img" src="assets/img/searchCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Favorites - section</h1><img class="img-fluid" src="assets/img/favorites.png">
+                    </div>
+                    <div class="text">
+                        <p>The list of your favorite words are stored here. Clicking on the 'favorites' button on the tool bar displays this list</p>
+                        <h2>sample source code of the 'favorites' feature</h2>
+                        <p>The readFavorites() method contains the block of code that takes care of reading the list of favorite words. I commented the source code so there is not much for me to write about here.</p>
+                        <figure><img class="figure-img" src="assets/img/favoriteCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Font Color - section</h1><img class="img-fluid" src="assets/img/fontColor2.png"><img class="img-fluid" src="assets/img/fontColor.png">
+                    </div>
+                    <div class="text">
+                        <p>There are numerous font colors to choose from. I selected the list&nbsp; of font colors from CSS</p>
+                        <h2>sample source code of the 'Font Color' feature</h2>
+                        <p>The list of font colors is stored in an arrayList called fontColorObservableList. I used an arrayList because I was planning to make the user include his own font colors later.</p>
+                        <figure><img class="figure-img" src="assets/img/fontColorCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Font Size - section</h1><img class="img-fluid" src="assets/img/fontSize.png">
+                    </div>
+                    <div class="text">
+                        <p>'Font size' button loads the list of font sizes onto the listView. The bigger the font number, the bigger the texts appear.</p>
+                        <h2>sample source code of the 'font size' feature</h2>
+                        <p>Font sizes are stored in an array. The important function of writeSettings() method is to save the choice of font size of the user to disc. 'settings.file' stores the settings of the user. When the dictionary is loaded into memory, writeSettings() method is called to read the saved font settings into the application</p>
+                        <figure><img class="figure-img" src="assets/img/fontSizeCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">History - section</h1><img class="img-fluid" src="assets/img/hostory.png">
+                    </div>
+                    <div class="text">
+                        <p>All searched words are stored in the history section of the dictionary. The oldest search appears first and the newest appears last. The scrollbar is used to access the words that are not visible on the screen.</p>
+                        <h2>sample source code of the 'History' feature</h2>
+                        <p>readHistory() method performs one function. It loads the history of searched words from disc. history.txt file stores the history. Each word in this text file occupies one line. So in the source code below, line 564 uses a while loop to iterate through the contents of the history file after its loaded into an inputStream.&nbsp;</p>
+                        <figure><img class="figure-img" src="assets/img/historyCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Background - section</h1><img class="img-fluid" src="assets/img/backgroundColor1.png"><img class="img-fluid" src="assets/img/backgroundColor2.png">
+                    </div>
+                    <div class="text">
+                        <p>The user clicks on 'background' button to change the appearance of the dictionary's interface.&nbsp; His choice is saved to a file so anytime he reopens the dictionary, his saved settings will be loaded back and the dictionary's background color will be set to it</p>
+                        <h2>sample source code of the 'Background color' feature</h2>
+                        <p>from line 166 of the code below, button backgroundColor is an instance variable of class Dictionary_app_Main. it is declared above the constructor of the class but it is initialized in the constructor. I did that because I wanted the button to be loaded onto the primaryStage of the GUI as soon as the application launches. However, initializing instance variables in a constructor is not recommended, for security reasons. The next time I update this application, I will fix this</p>
+                        <figure><img class="figure-img" src="assets/img/backgroundColorCode.png"></figure>
+                        <figure></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
