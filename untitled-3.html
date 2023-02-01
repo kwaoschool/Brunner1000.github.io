@@ -14,6 +14,64 @@
 </head>
 
 <body>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Customer Relationship Management system (CRM)</h1><img class="img-fluid" src="assets/img/lead.png">
+                    </div>
+                    <div class="text">
+                        <p>CUSTOMER RELATIONSHIP MANAGEMENT SYSTEM(CRM) is a software that is used to store information about customers. When running an online business, it is important to keep track of your customers and the relationship you have with them. A CRM system is used to achieve that.</p>
+                        <h2>Features of the CRM</h2>
+                        <p>It contains a section for storing details of your business' leads. A lead is someone who is interested in your product. The CRM also contains a section for the list of customers you already have. Finally, there is a section for tracking your business goals.</p>
+                        <h2>Tools I built it with</h2>
+                        <p>My CRM runs on a webserver. I programmed it in these languages: HTML(for front end), CSS(for styling), JAVASCRIPT(for implementing drag and drop in the 'plan' section), PHP(for the backend and for connecting to the database). My database of choice was MYSQL. I used Netbeans IDE for the backend development and VScode IDE for the front end development. When testing offline on my computer, I used WAMP server.</p>
+                    </div>
+                    <div class="text">
+                        <h2>sample source code</h2>
+                        <p>The code block below is for logging into the CRM.&nbsp; The code for signing up is not shown here. The backend code below is entirely written in PHP. To log in, you need to enter your email and password. The 'if' statement on line 96 checks for correct login credentials. If the login details are valid, the user is redirected to the page containing list of interested people/leads (line 116)</p>
+                        <figure><img class="figure-img" src="assets/img/loginPhPCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Leads - section</h1><img class="img-fluid" src="assets/img/lead.png">
+                    </div>
+                    <div class="text">
+                        <p>The leads button at the top of the page is used to view the list of people who you have identified as interested in the product you sell. The table contains name, email, date etc. details of each lead. The lead score is how likely this person is going to become a customer. The lead score ranges from 0 to 100. The larger the lead score, the more likely the lead will become a customer.</p>
+                        <h2>sample source code</h2>
+                        <figure><img class="figure-img" src="assets/img/lead.png"><img class="figure-img" src="assets/img/leadCode.png"></figure>
+                        <p>Clicking on a row in the lead table displays the details of the selected lead. Here you can make changes to the information about the lead or delete the lead from the records.</p>
+                        <figure><img class="figure-img" src="assets/img/leadDetail.png"><img class="figure-img" src="assets/img/leadDetail2.png"><img class="figure-img" src="assets/img/leadDetailsCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Customers - section</h1><img class="img-fluid" src="assets/img/customers.png">
+                    </div>
+                    <div class="text">
+                        <p>The 'Customers' button loads the list of customers on a table. Clicking on a row of the table displays the details of the customer.</p>
+                        <h2>sample source code of the 'over the counter section'</h2>
+                        <figure><img class="figure-img" src="assets/img/customers.png"><img class="figure-img" src="assets/img/customersCode.png"></figure>
+                        <figure><img class="figure-img" src="assets/img/customerDetail%20(2).png"><img class="figure-img" src="assets/img/customerDetail2.png"><img class="figure-img" src="assets/img/customerDetailCode.png"></figure>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Plans(goals) - section</h1><img class="img-fluid" src="assets/img/goal.png">
+                    </div>
+                    <div class="text">
+                        <p>The plans of your business are listed here. They are grouped into 'not started', 'ongoing', and 'completed'. You can drag a plan from one group into another.</p>
+                        <h2>sample source code</h2>
+                        <figure><img class="figure-img" src="assets/img/goal.png"><img class="figure-img" src="assets/img/goalsCode.png"></figure>
+                        <p>When a goal/plan is selected, its detail is revealed. Here you can edit the details or delete the plan/goal</p>
+                        <figure><img class="figure-img" src="assets/img/planDetails.png"><img class="figure-img" src="assets/img/goaldDetailCode.png"></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
